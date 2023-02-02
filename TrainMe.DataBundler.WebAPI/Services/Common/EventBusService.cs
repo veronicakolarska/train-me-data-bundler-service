@@ -11,18 +11,19 @@ namespace TrainMe.DataBundler.Services.Common
 
     public class EventBusService : IEventBusService
     {
-        private readonly EventBusConfiguration _configuration;
-        public EventBusService(IOptions<EventBusConfiguration> options)
+        private readonly EventBusConfiguration eventBusConfiguration;
+        public EventBusService(EventBusConfiguration eventBusConfiguration)
         {
-            _configuration = options.Value;
+            this.eventBusConfiguration = eventBusConfiguration;
         }
         public IConnection CreateChannel()
         {
             ConnectionFactory connection = new ConnectionFactory()
             {
-                UserName = _configuration.Username,
-                Password = _configuration.Password,
-                HostName = _configuration.HostName
+                UserName = this.eventBusConfiguration.Username,
+                Password = this.eventBusConfiguration.Password,
+                HostName = this.eventBusConfiguration.HostName,
+                Port = 5672
             };
             connection.DispatchConsumersAsync = true;
 

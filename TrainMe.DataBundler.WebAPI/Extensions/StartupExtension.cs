@@ -9,7 +9,13 @@ namespace TrainMe.DataBundler.Extensions
     {
         public static void AddCommonService(this IServiceCollection services, IConfiguration configuration)
         {
-            services.Configure<EventBusConfiguration>(a => configuration.GetSection(nameof(EventBusConfiguration)).Bind(a));
+            var eventBusConfig = configuration.GetSection(nameof(EventBusConfiguration)).Get<EventBusConfiguration>();
+            if (eventBusConfig is null)
+            {
+                throw new ArgumentNullException("missing event bus configuration");
+            }
+
+            services.AddSingleton<EventBusConfiguration>(a => eventBusConfig);
             services.AddSingleton<IEventBusService, EventBusService>();
         }
     }
