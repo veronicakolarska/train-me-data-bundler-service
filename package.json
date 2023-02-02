@@ -13,9 +13,9 @@
   "author": "veronicakolarska",
   "license": "ISC",
   "devDependencies": {
-    "@commitlint/cli": "^17.4.2",
-    "@commitlint/config-conventional": "^17.4.2",
-    "markdownlint": "^0.27.0",
-    "markdownlint-cli": "^0.33.0"
+    "@commitlint/cli": "17.4.2",
+    "@commitlint/config-conventional": "17.4.2",
+    "markdownlint": "0.27.0",
+    "markdownlint-cli": "0.33.0"
   }
 }
