@@ -1,4 +1,4 @@
-namespace TrainMeDataBundlerService;
+namespace TrainMe.DataBundler.WebAPI;
 
 public class WeatherForecast
 {

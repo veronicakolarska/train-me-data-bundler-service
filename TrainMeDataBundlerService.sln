@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainMeDataBundlerService", "TrainMeDataBundlerService\TrainMeDataBundlerService.csproj", "{60D7FB6C-F966-4450-97E2-24FEC6FAD41F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainMe.DataBundler.WebAPI", "TrainMe.DataBundler.WebAPI\TrainMe.DataBundler.WebAPI.csproj", "{60D7FB6C-F966-4450-97E2-24FEC6FAD41F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
