@@ -6,17 +6,17 @@ namespace TrainMe.DataBundler.WebAPI.Controllers;
 [Route("[controller]")]
 public class ExportController : ControllerBase
 {
-    private readonly ILogger<WeatherForecastController> _logger;
+    private readonly ILogger<ExportController> _logger;
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    public ExportController(ILogger<ExportController> logger)
     {
         _logger = logger;
     }
 
     [HttpGet(Name = "User")]
-    public ActionResult ExportUser()
+    public ActionResult ExportUser(int id)
     {
-        this._logger.Info();
+        this._logger.LogInformation("exporting user data for user", id);
         return this.Ok();
     }
 }
