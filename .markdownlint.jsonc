@@ -1,0 +1,64 @@
+{
+    "default": false,
+    "heading-increment": true,
+    "first-heading-h1": true,
+    "heading-style": true,
+    "ul-style": {
+        "style": "dash"
+    },
+    "list-indent": true,
+    "ul-start-left": true,
+    "ul-indent": {
+        "indent": 4
+    },
+    "no-trailing-spaces": true,
+    "no-hard-tabs": true,
+    "no-reversed-links": true,
+    "no-multiple-blanks": true,
+    "line-length": {
+        "code_blocks": true,
+        "headings": false,
+        "tables": false,
+        "line_length": 400
+    },
+    "commands-show-output": true,
+    "no-missing-space-atx": true,
+    "no-multiple-space-atx": true,
+    "no-missing-space-closed-atx": true,
+    "no-multiple-space-closed-atx": true,
+    "blanks-around-headings": true,
+    "heading-start-left": true,
+    "no-duplicate-heading": {
+        "siblings_only": true
+    },
+    "single-h1": true,
+    "no-trailing-punctuation": false,
+    "no-multiple-space-blockquote": true,
+    "no-blanks-blockquote": false,
+    "ol-prefix": {
+        "style": "one"
+    },
+    "list-marker-space": true,
+    "blanks-around-fences": true,
+    "blanks-around-lists": false,
+    "no-inline-html": {
+        "allowed_elements": [
+            "a"
+        ]
+    },
+    "no-bare-urls": true,
+    "hr-style": {
+        "style": "---"
+    },
+    "no-emphasis-as-heading": true,
+    "no-space-in-emphasis": true,
+    "no-space-in-code": true,
+    "no-space-in-links": true,
+    "fenced-code-language": true,
+    "first-line-h1": true,
+    "no-empty-links": true,
+    "required-headings": false,
+    "proper-names": false,
+    "no-alt-text": true,
+    "code-block-style": "fenced"
+}
