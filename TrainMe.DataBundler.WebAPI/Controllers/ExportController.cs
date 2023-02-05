@@ -26,13 +26,7 @@ public class ExportController : ControllerBase
     {
         this.logger.LogInformation("starting test publish", id);
 
-        using var connection = this.eventBusService.CreateChannel();
-        using var model = connection.CreateModel();
-        var body = Encoding.UTF8.GetBytes("Hi");
-        model.BasicPublish(string.Empty,
-                                string.Empty,
-                                basicProperties: null,
-                                body: body);
+        this.eventBusService.SendMessage("HelloWorld", "test-queue");
 
         this.logger.LogInformation("exporting user data for user", id);
         return this.Ok();
