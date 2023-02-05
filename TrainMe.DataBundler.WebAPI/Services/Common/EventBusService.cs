@@ -27,7 +27,7 @@ namespace TrainMe.DataBundler.Services.Common
                 UserName = this.eventBusConfiguration.Username,
                 Password = this.eventBusConfiguration.Password,
                 HostName = this.eventBusConfiguration.HostName,
-                Port = 5672
+                Port = this.eventBusConfiguration.Port,
             };
             connection.DispatchConsumersAsync = true;
 
